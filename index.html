@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>StopWatch</title>
+</head>
+<body>
+  
+    
+    <div id="container">
+        <div class="block">
+
+            <div class="fa-solid fa-font-case" id="label">Stopwatch</div>
+            
+            <div class="fa-solid fa-font-case" id="display">
+                <span id="min">00</span>:<span id="sec">00</span>:<span id="tens">00</span>
+            </div>
+            
+            <div id="buttons">
+                
+                
+                <!--  All Buttons  -->
+                <button onclick="start()" class="fa-solid fa-font-case" id="start-btn">Start</button>
+                <button onclick="stop()" class="fa-solid fa-font-case" id="stop-btn">Stop</button>
+                <button onclick="reset()" class="fa-solid fa-font-case" id="reset-btn">Reset</button>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/4682100f37.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

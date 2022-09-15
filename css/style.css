@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(94, 241, 94);
+    /* background-color: tomato; */
+ }
+
+ 
+#container {
+    display: flex;
+   justify-content: center;
+   
+    /* opacity: 0.5; */
+}
+
+
+
+.block{
+    height: 450px;
+    width: 750px;
+    border: 3px solid blanchedalmond;
+    border-radius: 20px;
+    position: relative;
+     margin-top: 7%;
+    /* margin-left: 27%;  */
+    box-shadow: 1px 1px 15px 1px white;
+    background-color: rgb(250, 0, 54);
+    
+    
+}
+
+#label {
+    position: absolute;
+    top: -10px;
+    left: 38%;
+    height: 30px;
+    width: 180px;
+    font-size: larger;
+    background-color: rgb(57, 109, 253);
+    border: 2px solid red;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/* Display */
+
+#display{
+    position: absolute;
+    left:24%;
+    top: 25%;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* Buttons */
+
+#buttons{
+    position: absolute;
+    /* left:40%; */
+    bottom: 25%;
+    /* border: 1px solid black; */
+    width: 380px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    left: 25%;
+}
+
+#start-btn{
+    width: 107px;
+    border-radius: 5px;
+    /* background-color: aqua; */
+}
+#start-btn:hover{
+    width: 106px;
+    border-radius: 5px;
+    background-color: rgb(54, 255, 47);;
+    color: aliceblue;
+    border-color: wheat;
+    box-shadow: 1px 1px 10px 2px wheat;
+}
+
+#stop-btn{
+    width: 107px;
+    border-radius: 5px;
+    /* background-color: aqua; */
+}
+#stop-btn:hover{
+    width: 106px;
+    border-radius: 5px;
+    background-color: yellow;
+    /* color: aliceblue; */
+    border-color: wheat;
+    box-shadow: 1px 1px 5px 2px yellow;
+}
+
+#reset-btn{
+    width: 107px;
+    border-radius: 5px;
+    /* background-color: aqua; */
+}
+#reset-btn:hover{
+    width: 106px;
+    border-radius: 5px;
+    background-color: red;
+    color: aliceblue;
+    border-color: wheat;
+    box-shadow: 1px 1px 10px 2px white;
+}
+
+#tens{
+    font-size: 55px;
+}
