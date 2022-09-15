@@ -1,3 +1,5 @@
+
+//  Storing value in to the variables
 let min = 00;
 let sec = 00;
 let tens = 00;
@@ -7,17 +9,20 @@ const getTens = document.getElementById('tens');
 let interval;
 
 
-
+// This function will Start the Stopwatch
 let start = ()=>{
     clearInterval(interval);
     interval = setInterval(startStopWatch,10);
      
 }
 
+
+// This function will pause the Stopwatch
 let stop = ()=>{
     clearInterval(interval);
 }
 
+// This reset Function reset the StopWatch
 let reset = ()=>{
     clearInterval(interval);
     min = '00';
@@ -27,6 +32,10 @@ let reset = ()=>{
     getSec.innerHTML = sec;
     getTens.innerHTML = tens;  
 }
+
+
+
+// All  main code of Stopwatch is here
 
 let startStopWatch = ()=>{
     tens++;
