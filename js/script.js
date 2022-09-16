@@ -10,57 +10,57 @@ let interval;
 
 
 // This function will Start the Stopwatch
-let start = ()=>{
+let start = () => {
     clearInterval(interval);
-    interval = setInterval(startStopWatch,10);
-     
+    interval = setInterval(startStopWatch, 10);
+
 }
 
 
 // This function will pause the Stopwatch
-let stop = ()=>{
+let stop = () => {
     clearInterval(interval);
 }
 
 // This reset Function reset the StopWatch
-let reset = ()=>{
+let reset = () => {
     clearInterval(interval);
     min = '00';
     sec = '00';
     tens = '00';
     getMin.innerHTML = min;
     getSec.innerHTML = sec;
-    getTens.innerHTML = tens;  
+    getTens.innerHTML = tens;
 }
 
 
 
 // All  main code of Stopwatch is here
 
-let startStopWatch = ()=>{
+let startStopWatch = () => {
     tens++;
-if(tens <= 9){
-    getTens.innerHTML = '0'+tens;
-}
-if(tens > 9){
-    getTens.innerHTML = tens;
-}
-if(tens > 99){
-    sec++;
-    getSec.innerHTML = '0'+sec;
-    tens = 0;
-    getTens.innerHTML = '0'+0;
-}
-if(sec > 9){
-    getSec.innerHTML = sec;
-}
-if(sec > 59 ){
-    min++;
-    getMin.innerHTML = '0'+min;
-    sec = 0;
-    getSec.innerHTML = '0'+ 0;
-}
-if(min > 9){
-    getMin.innerHTML = min;
-}
+    if (tens <= 9) {
+        getTens.innerHTML = '0' + tens;
+    }
+    if (tens > 9) {
+        getTens.innerHTML = tens;
+    }
+    if (tens > 99) {
+        sec++;
+        getSec.innerHTML = '0' + sec;
+        tens = 0;
+        getTens.innerHTML = '0' + 0;
+    }
+    if (sec > 9) {
+        getSec.innerHTML = sec;
+    }
+    if (sec > 59) {
+        min++;
+        getMin.innerHTML = '0' + min;
+        sec = 0;
+        getSec.innerHTML = '0' + 0;
+    }
+    if (min > 9) {
+        getMin.innerHTML = min;
+    }
 }
